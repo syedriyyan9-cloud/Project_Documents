@@ -1,0 +1,5 @@
+path: D:/FYP_Documents/Project/Modals/Yolo/yolo_test
+train: images/train
+val: images/val
+nc: 2
+names: ["Parasitized", "Uninfected"]
