@@ -16,7 +16,6 @@ from sklearn.metrics import (
 from imblearn.over_sampling import SMOTE
 from lightgbm import LGBMClassifier
 
-
 # ---------- CONFIG ----------
 TRAIN_PATH = Path(__file__).resolve().parents[2] / 'Dengue-Training-7000.csv'
 TEST_PATH = Path(__file__).resolve().parents[2] / 'Dengue-Test-305.csv'
