@@ -41,12 +41,14 @@ file_path_logistic_regression_metrics = "Modals/logistic regression/synthetic_da
 
 file_path_lightgbm_metrics = "Modals/lightgbm/synthetic_data_plus_k_cross_folding/LightGBM_metrics.xlsx"
 
+file_path_custom_neural_network = "Modals/dengue custom neural network/synthetic_data_plus_k_cross_folding/Custom_Shallow_NN_metrics.xlsx"
 
 # ---------- LOAD EXCEL FILES ----------
 xgboost_df = pd.read_excel(file_path_xgboost_metrics)
 random_forest_df = pd.read_excel(file_path_random_forest_metrics)
 logistic_regression_df = pd.read_excel(file_path_logistic_regression_metrics)
 lightgbm_df = pd.read_excel(file_path_lightgbm_metrics)
+customnn_df = pd.read_excel(file_path_custom_neural_network)
 
 
 # ---------- COMBINE ALL MODELS ----------
@@ -55,7 +57,8 @@ combined_df = pd.concat(
         xgboost_df,
         random_forest_df,
         logistic_regression_df,
-        lightgbm_df
+        lightgbm_df,
+        customnn_df
     ],
     ignore_index=True,
     sort=False
